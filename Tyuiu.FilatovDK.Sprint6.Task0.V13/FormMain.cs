@@ -56,5 +56,10 @@ namespace Tyuiu.FilatovDK.Sprint6.Task0.V13
         {
 
         }
+
+        private void textBoxResult_FDK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

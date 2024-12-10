@@ -51,15 +51,16 @@
             // 
             // textBoxResult_FDK
             // 
-            textBoxResult_FDK.Location = new Point(688, 388);
+            textBoxResult_FDK.Location = new Point(688, 386);
             textBoxResult_FDK.Multiline = true;
             textBoxResult_FDK.Name = "textBoxResult_FDK";
             textBoxResult_FDK.Size = new Size(100, 23);
             textBoxResult_FDK.TabIndex = 2;
+            textBoxResult_FDK.TextChanged += textBoxResult_FDK_TextChanged;
             // 
             // textBoxValueX_FDK
             // 
-            textBoxValueX_FDK.Location = new Point(43, 388);
+            textBoxValueX_FDK.Location = new Point(43, 386);
             textBoxValueX_FDK.Multiline = true;
             textBoxValueX_FDK.Name = "textBoxValueX_FDK";
             textBoxValueX_FDK.Size = new Size(100, 23);
@@ -118,7 +119,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(801, 448);
             Controls.Add(pictureBox1);
             Controls.Add(buttonHelp_FDK);
             Controls.Add(label3);
