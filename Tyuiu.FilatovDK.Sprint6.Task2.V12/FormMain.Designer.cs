@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             buttonResult = new Button();
             button2 = new Button();
             textBoxStop = new TextBox();
@@ -40,7 +43,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            chartMain = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)dataGridViewRows).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chartMain).BeginInit();
             SuspendLayout();
             // 
             // buttonResult
@@ -86,6 +91,7 @@
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             groupBox1.Text = "произвести табулирование функции на заданном диапазоне (-5; 5) с шагом 1";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // dataGridViewRows
             // 
@@ -147,11 +153,30 @@
             label4.TabIndex = 8;
             label4.Text = "Вывод двнных\r\nРезультат:\r\n";
             // 
+            // chartMain
+            // 
+            chartArea1.Name = "ChartArea1";
+            chartMain.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartMain.Legends.Add(legend1);
+            chartMain.Location = new Point(549, 39);
+            chartMain.Name = "chartMain";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartMain.Series.Add(series1);
+            chartMain.Size = new Size(577, 399);
+            chartMain.TabIndex = 9;
+            chartMain.Text = "chart1";
+            chartMain.Click += chart1_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1138, 450);
+            Controls.Add(chartMain);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -165,6 +190,7 @@
             Name = "FormMain";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridViewRows).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chartMain).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,5 +209,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMain;
     }
 }

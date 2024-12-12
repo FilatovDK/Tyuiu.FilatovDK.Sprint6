@@ -17,6 +17,14 @@ namespace Tyuiu.FilatovDK.Sprint6.Task2.V12
 
                 int len = ds.GetMassFunction(startstep, stopstep).Length;
 
+                this.chartMain.Titles.Clear();
+                this.chartMain.Titles.Add("график sin(x)");
+                this.chartMain.ChartAreas[0].AxisX.Title = "ось X";
+                this.chartMain.ChartAreas[0].AxisY.Title = "ось Y";
+
+                this.dataGridViewRows.Rows.Clear();
+
+
                 double[] valueArray;
                 valueArray = new double[len];
                 valueArray = ds.GetMassFunction(startstep, stopstep);
@@ -59,6 +67,16 @@ namespace Tyuiu.FilatovDK.Sprint6.Task2.V12
         }
 
         private void textBoxStop_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
