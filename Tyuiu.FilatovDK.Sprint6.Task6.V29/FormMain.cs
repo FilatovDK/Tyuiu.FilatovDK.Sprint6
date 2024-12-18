@@ -14,7 +14,7 @@ namespace Tyuiu.FilatovDK.Sprint6.Task6.V29
                 InitializeComponent();
             }
 
-            private void buttonOpen_GVM_Click(object sender, EventArgs e)
+            private void buttonOpen_FDK_Click(object sender, EventArgs e)
             {
                 openFileDialogTask_FDK.ShowDialog();
                 path = openFileDialogTask_FDK.FileName;
@@ -23,12 +23,12 @@ namespace Tyuiu.FilatovDK.Sprint6.Task6.V29
                 buttonDone_FDK.Enabled = true;
             }
 
-            private void buttonDone_GVM_Click(object sender, EventArgs e)
+            private void buttonDone_FDK_Click(object sender, EventArgs e)
             {
                 textBoxRes_FDK.Text = ds.CollectTextFromFile(path);
             }
 
-            private void buttonSp_GVM_Click(object sender, EventArgs e)
+            private void buttonSp_FDK_Click(object sender, EventArgs e)
             {
                 FormAbout formAbout = new FormAbout();
                 formAbout.ShowDialog();
@@ -39,4 +39,10 @@ namespace Tyuiu.FilatovDK.Sprint6.Task6.V29
 
             }
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+}
