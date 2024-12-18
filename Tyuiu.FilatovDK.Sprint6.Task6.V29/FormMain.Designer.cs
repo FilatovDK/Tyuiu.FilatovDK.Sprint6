@@ -1,6 +1,6 @@
-﻿namespace Tyuiu.FilatovDK.Sprint6.Task4.V3
+﻿namespace Tyuiu.FilatovDK.Sprint6.Task6.V29
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-///            SuspendLayout();
+            SuspendLayout();
             // 
             // Form1
             // 
-///            AutoScaleDimensions = new SizeF(7F, 15F);
-///            AutoScaleMode = AutoScaleMode.Font;
-   ///         ClientSize = new Size(800, 450);
-      ///      Name = "Form1";
-         ///   Text = "Form1";
-            ///Load += this.Form1_Load;
-            ///ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         #endregion

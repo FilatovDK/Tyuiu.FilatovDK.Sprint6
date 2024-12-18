@@ -55,5 +55,10 @@ namespace Tyuiu.FilatovDK.Sprint6.Task5.V3
             txt.StartInfo.Arguments = path;
             txt.Start();
         }
+
+        private void InitializeComponent()
+        {
+
+        }
     }
 }
